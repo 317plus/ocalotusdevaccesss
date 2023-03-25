@@ -1,18 +1,5 @@
 {
-  "mod_elements": [
-    {
-      "name": "Fortnioteatafawfda",
-      "type": "overlay",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fortnioteatafawfda",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ocalotusoriginalsedition/client/screens/FortnioteatafawfdaOverlay.java"
-        ]
-      }
-    }
-  ],
+  "mod_elements": [],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {

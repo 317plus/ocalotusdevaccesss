@@ -1,20 +1,22 @@
 {
   "mod_elements": [
     {
-      "name": "LiumShard",
-      "type": "item",
-      "sortid": 1,
+      "name": "Fortnioteatafawfda",
+      "type": "overlay",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "lium_shard"
+      "registry_name": "fortnioteatafawfda",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ocalotusoriginalsedition/client/screens/FortnioteatafawfdaOverlay.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {
-      "item.ocalotus_originals_edition.lium_shard": "Lium Shard"
-    }
+    "en_us": {}
   },
   "foldersRoot": {
     "name": "~",
@@ -33,10 +35,10 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.18.2",
+    "currentGenerator": "forge-1.19.2",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.ocalotusoriginalsedition",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200348217
+  "mcreatorVersion": 202300110610
 }
