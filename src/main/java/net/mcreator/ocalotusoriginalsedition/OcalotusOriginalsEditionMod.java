@@ -29,6 +29,10 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.ocalotusoriginalsedition.init.OcalotusOriginalsEditionModItems;
+import net.mcreator.ocalotusoriginalsedition.init.OcalotusOriginalsEditionModFeatures;
+import net.mcreator.ocalotusoriginalsedition.init.OcalotusOriginalsEditionModBlocks;
+
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -47,6 +51,11 @@ public class OcalotusOriginalsEditionMod {
 		MinecraftForge.EVENT_BUS.register(this);
 
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		OcalotusOriginalsEditionModBlocks.REGISTRY.register(bus);
+		OcalotusOriginalsEditionModItems.REGISTRY.register(bus);
+
+		OcalotusOriginalsEditionModFeatures.REGISTRY.register(bus);
 
 	}
 

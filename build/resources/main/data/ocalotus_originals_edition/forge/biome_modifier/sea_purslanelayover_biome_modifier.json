@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "warm_ocean",
+  "features": "ocalotus_originals_edition:sea_purslanelayover",
+  "step": "underground_ores"
+}

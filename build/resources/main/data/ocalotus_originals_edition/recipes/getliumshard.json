@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "experience": 8,
-  "cookingtime": 104,
-  "ingredient": {
-    "item": "minecraft:lapis_lazuli"
-  },
-  "result": "ocalotus_originals_edition:lium_shard"
-}

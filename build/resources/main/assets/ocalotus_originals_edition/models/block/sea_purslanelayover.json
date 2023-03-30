@@ -1,0 +1,9 @@
+{
+  "parent": "ocalotus_originals_edition:custom/sea_purslane",
+  "textures": {
+    "all": "ocalotus_originals_edition:blocks/seapurslaneblocktexture",
+    "particle": "ocalotus_originals_edition:blocks/seapurslaneblocktexture",
+    "0": "ocalotus_originals_edition:blocks/seapurslaneblocktexture"
+  },
+  "render_type": "solid"
+}
