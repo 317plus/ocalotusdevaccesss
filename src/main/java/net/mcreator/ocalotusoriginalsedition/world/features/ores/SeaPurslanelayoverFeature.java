@@ -1,6 +1,7 @@
 
 package net.mcreator.ocalotusoriginalsedition.world.features.ores;
 
+import net.minecraft.world.level.levelgen.structure.templatesystem.BlockStateMatchTest;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
 import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
@@ -12,12 +13,15 @@ import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.Level;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.core.Holder;
+
+import net.mcreator.ocalotusoriginalsedition.init.OcalotusOriginalsEditionModBlocks;
 
 import java.util.Set;
 import java.util.List;
@@ -29,9 +33,10 @@ public class SeaPurslanelayoverFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new SeaPurslanelayoverFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("ocalotus_originals_edition:sea_purslanelayover", FEATURE, new OreConfiguration(List.of(), 24));
+		CONFIGURED_FEATURE = FeatureUtils.register("ocalotus_originals_edition:sea_purslanelayover", FEATURE,
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.SEAGRASS.defaultBlockState()), OcalotusOriginalsEditionModBlocks.SEA_PURSLANELAYOVER.get().defaultBlockState())), 24));
 		PLACED_FEATURE = PlacementUtils.register("ocalotus_originals_edition:sea_purslanelayover", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(12), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(64)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(24), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(64)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 
