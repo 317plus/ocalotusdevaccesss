@@ -54,7 +54,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "SEA_GRASS"
+      "value": "OCEAN_PLANT"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -96,7 +96,7 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 4,
+    "luminance": 7,
     "unbreakable": false,
     "breakHarvestLevel": 1,
     "isBonemealable": false,
@@ -131,11 +131,20 @@
     "blocksToReplace": [
       {
         "value": "Blocks.SEAGRASS"
+      },
+      {
+        "value": "Blocks.TALL_SEAGRASS"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#2"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#3"
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 24,
-    "frequencyOnChunk": 24,
+    "frequencyPerChunks": 32,
+    "frequencyOnChunk": 32,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64
   }

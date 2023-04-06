@@ -32,7 +32,7 @@ public class SeaPurslanelayoverBlock extends Block implements SimpleWaterloggedB
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public SeaPurslanelayoverBlock() {
-		super(BlockBehaviour.Properties.of(Material.REPLACEABLE_WATER_PLANT).sound(SoundType.LILY_PAD).strength(0.1f, 0f).lightLevel(s -> 4).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.WATER_PLANT).sound(SoundType.LILY_PAD).strength(0.1f, 0f).lightLevel(s -> 7).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(WATERLOGGED, false));
 	}
 
