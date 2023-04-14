@@ -1,7 +1,27 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "ocalotus_originals_edition:block/sea_purslanelayover"
+    },
+    "facing=east": {
+      "model": "ocalotus_originals_edition:block/sea_purslanelayover",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ocalotus_originals_edition:block/sea_purslanelayover",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ocalotus_originals_edition:block/sea_purslanelayover",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "ocalotus_originals_edition:block/sea_purslanelayover",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "ocalotus_originals_edition:block/sea_purslanelayover",
+      "x": 90
     }
   }
 }

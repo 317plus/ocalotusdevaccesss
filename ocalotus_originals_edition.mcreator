@@ -3,6 +3,7 @@
     {
       "name": "SeaPurslanelayover",
       "type": "block",
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sea_purslanelayover",
