@@ -20,25 +20,34 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Mirror;
-import net.minecraft.world.level.block.DirectionalBlock;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+
+import net.mcreator.ocalotusoriginalsedition.init.OcalotusOriginalsEditionModItems;
 
 import java.util.List;
 import java.util.Collections;
 
 public class SeaPurslanelayoverBlock extends Block implements SimpleWaterloggedBlock {
-	public static final DirectionProperty FACING = DirectionalBlock.FACING;
+	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public SeaPurslanelayoverBlock() {
-		super(BlockBehaviour.Properties.of(Material.WATER_PLANT).sound(SoundType.LILY_PAD).strength(0.1f, 0f).lightLevel(s -> 7).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.WATER_PLANT).sound(SoundType.LILY_PAD).strength(0.1f, 0f).lightLevel(s -> 7).requiresCorrectToolForDrops().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
+	}
+
+	@Override
+	public boolean skipRendering(BlockState state, BlockState adjacentBlockState, Direction side) {
+		return adjacentBlockState.getBlock() == this ? true : super.skipRendering(state, adjacentBlockState, side);
 	}
 
 	@Override
@@ -63,8 +72,6 @@ public class SeaPurslanelayoverBlock extends Block implements SimpleWaterloggedB
 			case NORTH -> box(0, 0, 0, 16, 2, 16);
 			case EAST -> box(0, 0, 0, 16, 2, 16);
 			case WEST -> box(0, 0, 0, 16, 2, 16);
-			case UP -> box(0, 0, 0, 16, 16, 2);
-			case DOWN -> box(0, 0, 14, 16, 16, 16);
 		};
 	}
 
@@ -76,7 +83,7 @@ public class SeaPurslanelayoverBlock extends Block implements SimpleWaterloggedB
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
 		boolean flag = context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;
-		return this.defaultBlockState().setValue(FACING, context.getNearestLookingDirection().getOpposite()).setValue(WATERLOGGED, flag);
+		return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(WATERLOGGED, flag);
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {
@@ -101,10 +108,17 @@ public class SeaPurslanelayoverBlock extends Block implements SimpleWaterloggedB
 	}
 
 	@Override
+	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
+		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
+			return tieredItem.getTier().getLevel() >= 1;
+		return false;
+	}
+
+	@Override
 	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
+		return Collections.singletonList(new ItemStack(OcalotusOriginalsEditionModItems.ITEMSEAPURSLANE.get()));
 	}
 }

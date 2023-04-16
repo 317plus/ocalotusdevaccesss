@@ -1,0 +1,71 @@
+{
+  "mod_elements": [
+    {
+      "name": "SeaPurslanelayover",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sea_purslanelayover",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ocalotus_originals_edition/models/block/sea_purslanelayover.json",
+          "src/main/java/net/mcreator/ocalotusoriginalsedition/block/SeaPurslanelayoverBlock.java",
+          "src/main/java/net/mcreator/ocalotusoriginalsedition/world/features/ores/SeaPurslanelayoverFeature.java",
+          "src/main/resources/assets/ocalotus_originals_edition/blockstates/sea_purslanelayover.json",
+          "src/main/resources/data/ocalotus_originals_edition/forge/biome_modifier/sea_purslanelayover_biome_modifier.json",
+          "src/main/resources/assets/ocalotus_originals_edition/models/item/sea_purslanelayover.json"
+        ]
+      }
+    },
+    {
+      "name": "Newseapurslane",
+      "type": "plant",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "newseapurslane",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ocalotusoriginalsedition/world/features/plants/NewseapurslaneFeature.java",
+          "src/main/resources/assets/ocalotus_originals_edition/models/item/newseapurslane.json",
+          "src/main/resources/assets/ocalotus_originals_edition/models/block/newseapurslane.json",
+          "src/main/resources/assets/ocalotus_originals_edition/blockstates/newseapurslane.json",
+          "src/main/resources/data/ocalotus_originals_edition/forge/biome_modifier/newseapurslane_biome_modifier.json",
+          "src/main/java/net/mcreator/ocalotusoriginalsedition/block/NewseapurslaneBlock.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.ocalotus_originals_edition.newseapurslane": "Sea Purslane Plant",
+      "block.ocalotus_originals_edition.sea_purslanelayover": "Sea Purslane Plant"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "ocalotus_originals_edition",
+    "modName": "Ocalotus Originals Edition",
+    "version": "1.0.0",
+    "author": "317 Plus, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.ocalotusoriginalsedition",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300110610
+}

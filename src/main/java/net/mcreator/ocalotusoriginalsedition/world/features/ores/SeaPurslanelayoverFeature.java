@@ -34,10 +34,7 @@ public class SeaPurslanelayoverFeature extends OreFeature {
 	public static Feature<?> feature() {
 		FEATURE = new SeaPurslanelayoverFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("ocalotus_originals_edition:sea_purslanelayover", FEATURE,
-				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.SEAGRASS.defaultBlockState()), OcalotusOriginalsEditionModBlocks.SEA_PURSLANELAYOVER.get().defaultBlockState()),
-						OreConfiguration.target(new BlockStateMatchTest(Blocks.TALL_SEAGRASS.defaultBlockState()), OcalotusOriginalsEditionModBlocks.SEA_PURSLANELAYOVER.get().defaultBlockState()),
-						OreConfiguration.target(new BlockStateMatchTest(Blocks.TALL_GRASS.defaultBlockState()), OcalotusOriginalsEditionModBlocks.SEA_PURSLANELAYOVER.get().defaultBlockState()),
-						OreConfiguration.target(new BlockStateMatchTest(Blocks.LARGE_FERN.defaultBlockState()), OcalotusOriginalsEditionModBlocks.SEA_PURSLANELAYOVER.get().defaultBlockState())), 32));
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.WAXED_EXPOSED_CUT_COPPER_SLAB.defaultBlockState()), OcalotusOriginalsEditionModBlocks.SEA_PURSLANELAYOVER.get().defaultBlockState())), 32));
 		PLACED_FEATURE = PlacementUtils.register("ocalotus_originals_edition:sea_purslanelayover", CONFIGURED_FEATURE,
 				List.of(CountPlacement.of(32), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(64)), BiomeFilter.biome()));
 		return FEATURE;
