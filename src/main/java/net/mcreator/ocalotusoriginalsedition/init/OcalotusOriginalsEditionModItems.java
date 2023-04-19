@@ -19,6 +19,7 @@ public class OcalotusOriginalsEditionModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, OcalotusOriginalsEditionMod.MODID);
 	public static final RegistryObject<Item> SEA_PURSLANELAYOVER = block(OcalotusOriginalsEditionModBlocks.SEA_PURSLANELAYOVER, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> SEA_PURSLANE_ITEM_PLANT = block(OcalotusOriginalsEditionModBlocks.SEA_PURSLANE_ITEM_PLANT, CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Item> POTPURSLANE = block(OcalotusOriginalsEditionModBlocks.POTPURSLANE, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

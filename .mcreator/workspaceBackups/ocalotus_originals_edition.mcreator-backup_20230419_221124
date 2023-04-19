@@ -19,16 +19,18 @@
       }
     },
     {
-      "name": "Itemseapurslane",
-      "type": "item",
-      "sortid": 3,
+      "name": "Seapurslaneforpot",
+      "type": "plant",
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "itemseapurslane",
+      "registry_name": "sea_purslane_item_plant",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ocalotus_originals_edition/models/item/itemseapurslane.json",
-          "src/main/java/net/mcreator/ocalotusoriginalsedition/item/ItemseapurslaneItem.java"
+          "src/main/resources/assets/ocalotus_originals_edition/models/block/sea_purslane_item_plant.json",
+          "src/main/resources/assets/ocalotus_originals_edition/blockstates/sea_purslane_item_plant.json",
+          "src/main/resources/assets/ocalotus_originals_edition/models/item/sea_purslane_item_plant.json",
+          "src/main/java/net/mcreator/ocalotusoriginalsedition/block/SeapurslaneforpotBlock.java"
         ]
       }
     }
@@ -37,8 +39,8 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.ocalotus_originals_edition.sea_purslanelayover": "Sea Purslane Plant",
-      "item.ocalotus_originals_edition.itemseapurslane": "Sea Purslane"
+      "block.ocalotus_originals_edition.sea_purslane_item_plant": "Sea Purslane Plant test2",
+      "block.ocalotus_originals_edition.sea_purslanelayover": "Sea Purslane Plant"
     }
   },
   "foldersRoot": {
