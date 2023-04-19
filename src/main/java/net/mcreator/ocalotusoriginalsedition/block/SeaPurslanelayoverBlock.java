@@ -31,7 +31,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.ocalotusoriginalsedition.init.OcalotusOriginalsEditionModItems;
+import net.mcreator.ocalotusoriginalsedition.init.OcalotusOriginalsEditionModBlocks;
 
 import java.util.List;
 import java.util.Collections;
@@ -119,6 +119,6 @@ public class SeaPurslanelayoverBlock extends Block implements SimpleWaterloggedB
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(OcalotusOriginalsEditionModItems.ITEMSEAPURSLANE.get()));
+		return Collections.singletonList(new ItemStack(OcalotusOriginalsEditionModBlocks.SEA_PURSLANE_ITEM_PLANT.get()));
 	}
 }

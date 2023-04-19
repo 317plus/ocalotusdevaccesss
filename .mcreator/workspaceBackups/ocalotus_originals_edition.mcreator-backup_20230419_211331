@@ -19,20 +19,16 @@
       }
     },
     {
-      "name": "Newseapurslane",
-      "type": "plant",
+      "name": "Itemseapurslane",
+      "type": "item",
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "newseapurslane",
+      "registry_name": "itemseapurslane",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ocalotusoriginalsedition/world/features/plants/NewseapurslaneFeature.java",
-          "src/main/resources/assets/ocalotus_originals_edition/models/item/newseapurslane.json",
-          "src/main/resources/assets/ocalotus_originals_edition/models/block/newseapurslane.json",
-          "src/main/resources/assets/ocalotus_originals_edition/blockstates/newseapurslane.json",
-          "src/main/resources/data/ocalotus_originals_edition/forge/biome_modifier/newseapurslane_biome_modifier.json",
-          "src/main/java/net/mcreator/ocalotusoriginalsedition/block/NewseapurslaneBlock.java"
+          "src/main/resources/assets/ocalotus_originals_edition/models/item/itemseapurslane.json",
+          "src/main/java/net/mcreator/ocalotusoriginalsedition/item/ItemseapurslaneItem.java"
         ]
       }
     }
@@ -41,8 +37,8 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.ocalotus_originals_edition.newseapurslane": "Sea Purslane Plant",
-      "block.ocalotus_originals_edition.sea_purslanelayover": "Sea Purslane Plant"
+      "block.ocalotus_originals_edition.sea_purslanelayover": "Sea Purslane Plant",
+      "item.ocalotus_originals_edition.itemseapurslane": "Sea Purslane"
     }
   },
   "foldersRoot": {

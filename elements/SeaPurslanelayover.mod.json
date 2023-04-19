@@ -44,7 +44,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:Itemseapurslane"
+      "value": "CUSTOM:Seapurslaneforpot"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,

@@ -17,13 +17,28 @@
           "src/main/resources/assets/ocalotus_originals_edition/models/item/sea_purslanelayover.json"
         ]
       }
+    },
+    {
+      "name": "Itemseapurslane",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "itemseapurslane",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ocalotus_originals_edition/models/item/itemseapurslane.json",
+          "src/main/java/net/mcreator/ocalotusoriginalsedition/item/ItemseapurslaneItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.ocalotus_originals_edition.sea_purslanelayover": "Sea Purslane Plant"
+      "block.ocalotus_originals_edition.sea_purslanelayover": "Sea Purslane Plant",
+      "item.ocalotus_originals_edition.itemseapurslane": "Sea Purslane"
     }
   },
   "foldersRoot": {

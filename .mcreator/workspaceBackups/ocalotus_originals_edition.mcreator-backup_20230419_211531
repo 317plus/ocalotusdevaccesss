@@ -17,13 +17,47 @@
           "src/main/resources/assets/ocalotus_originals_edition/models/item/sea_purslanelayover.json"
         ]
       }
+    },
+    {
+      "name": "Itemseapurslane",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "itemseapurslane",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ocalotus_originals_edition/models/item/itemseapurslane.json",
+          "src/main/java/net/mcreator/ocalotusoriginalsedition/item/ItemseapurslaneItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Seapurslaneforpot",
+      "type": "plant",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seapurslaneforpot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ocalotus_originals_edition/models/item/seapurslaneforpot.json",
+          "src/main/java/net/mcreator/ocalotusoriginalsedition/world/features/plants/SeapurslaneforpotFeature.java",
+          "src/main/resources/assets/ocalotus_originals_edition/models/block/seapurslaneforpot.json",
+          "src/main/java/net/mcreator/ocalotusoriginalsedition/block/SeapurslaneforpotBlock.java",
+          "src/main/resources/assets/ocalotus_originals_edition/blockstates/seapurslaneforpot.json",
+          "src/main/resources/data/ocalotus_originals_edition/forge/biome_modifier/seapurslaneforpot_biome_modifier.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.ocalotus_originals_edition.sea_purslanelayover": "Sea Purslane Y\u003d0"
+      "block.ocalotus_originals_edition.seapurslaneforpot": "Seapurslaneforpot",
+      "block.ocalotus_originals_edition.sea_purslanelayover": "Sea Purslane Plant",
+      "item.ocalotus_originals_edition.itemseapurslane": "Sea Purslane"
     }
   },
   "foldersRoot": {
