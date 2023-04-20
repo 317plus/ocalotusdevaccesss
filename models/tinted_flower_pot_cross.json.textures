@@ -3,7 +3,7 @@
     "default": {
       "map": {
         "flowerpot": "flower_pot",
-        "plant": "textureforpotpurslane",
+        "plant": "potpurslane2test",
         "dirt": "dirt"
       },
       "name": "default"

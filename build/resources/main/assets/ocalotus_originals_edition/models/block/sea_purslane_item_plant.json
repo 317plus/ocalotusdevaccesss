@@ -1,9 +1,0 @@
-{
-  "parent": "ocalotus_originals_edition:custom/newseitempurlsanae",
-  "textures": {
-    "all": "ocalotus_originals_edition:blocks/textureforpotpurslane",
-    "particle": "ocalotus_originals_edition:blocks/textureforpotpurslane",
-    "missing": "ocalotus_originals_edition:blocks/seapurlslane2"
-  },
-  "render_type": "cutout"
-}
