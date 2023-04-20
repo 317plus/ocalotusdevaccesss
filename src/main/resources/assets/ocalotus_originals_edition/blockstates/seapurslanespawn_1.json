@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ocalotus_originals_edition:block/seapurslanespawn_1"
+    },
+    "facing=east": {
+      "model": "ocalotus_originals_edition:block/seapurslanespawn_1",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ocalotus_originals_edition:block/seapurslanespawn_1",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ocalotus_originals_edition:block/seapurslanespawn_1",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "mod_elements": [
+    {
+      "name": "Seapurslanespawn1",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seapurslanespawn_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ocalotus_originals_edition/models/item/seapurslanespawn_1.json",
+          "src/main/resources/assets/ocalotus_originals_edition/blockstates/seapurslanespawn_1.json",
+          "src/main/java/net/mcreator/ocalotusoriginalsedition/block/Seapurslanespawn1Block.java",
+          "src/main/resources/assets/ocalotus_originals_edition/models/block/seapurslanespawn_1.json"
+        ]
+      },
+      "path": "~/Sea Purslane"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.ocalotus_originals_edition.seapurslanespawn_1": "Seapurslanespawn 1"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Sea Purslane",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "ocalotus_originals_edition",
+    "modName": "Ocalotus Originals Edition",
+    "version": "1.0.0",
+    "author": "317 Plus, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.ocalotusoriginalsedition",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300110610
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ocalotus_originals_edition:custom/sea_purslane2fixeddrop",
+  "textures": {
+    "all": "ocalotus_originals_edition:blocks/texture2",
+    "particle": "ocalotus_originals_edition:blocks/texture2",
+    "missing": "ocalotus_originals_edition:blocks/texture2"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "warm_ocean",
+  "features": "ocalotus_originals_edition:seapursalnespawnsturct",
+  "step": "surface_structures"
+}
